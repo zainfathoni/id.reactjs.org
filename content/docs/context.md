@@ -4,23 +4,23 @@ title: Context
 permalink: docs/context.html
 ---
 
-Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+Context menyediakan cara untuk melewatkan data melalui pohon komponen tanpa harus melewatkan props ke bawah secara manual di setiap tingkatan.
 
-In a typical React application, data is passed top-down (parent to child) via props, but this can be cumbersome for certain types of props (e.g. locale preference, UI theme) that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.
+Dalam aplikasi React pada umumnya, data dilewactkan dari atas ke bawah (dari orang tua ke anak) melalui props, tetapi ini bisa menjadi rumit untuk beberapa jenis props tertentu (misalnya, pilihan bahasa, tema antarmuka/UI) yang dibutuhkan oleh banyak komponen dalam suatu aplikasi. Context menyediakan cara untuk berbagi nilai-nilai semacam ini antar komponen tanpa harus secara eksplisit melewatkan prop melalui setiap tingkatan pada pohon komponen.
 
-- [When to Use Context](#when-to-use-context)
-- [Before You Use Context](#before-you-use-context)
-- [API](#api)
-  - [React.createContext](#reactcreatecontext)
-  - [Context.Provider](#contextprovider)
-  - [Class.contextType](#classcontexttype)
-  - [Context.Consumer](#contextconsumer)
-- [Examples](#examples)
-  - [Dynamic Context](#dynamic-context)
-  - [Updating Context from a Nested Component](#updating-context-from-a-nested-component)
-  - [Consuming Multiple Contexts](#consuming-multiple-contexts)
-- [Caveats](#caveats)
-- [Legacy API](#legacy-api)
+- [When to Use Context {#when-to-use-context}](#When-to-Use-Context-when-to-use-context)
+- [Before You Use Context {#before-you-use-context}](#Before-You-Use-Context-before-you-use-context)
+- [API {#api}](#API-api)
+  - [`React.createContext` {#reactcreatecontext}](#ReactcreateContext-reactcreatecontext)
+  - [`Context.Provider` {#contextprovider}](#ContextProvider-contextprovider)
+  - [`Class.contextType` {#classcontexttype}](#ClasscontextType-classcontexttype)
+  - [`Context.Consumer` {#contextconsumer}](#ContextConsumer-contextconsumer)
+- [Examples {#examples}](#Examples-examples)
+  - [Dynamic Context {#dynamic-context}](#Dynamic-Context-dynamic-context)
+  - [Updating Context from a Nested Component {#updating-context-from-a-nested-component}](#Updating-Context-from-a-Nested-Component-updating-context-from-a-nested-component)
+  - [Consuming Multiple Contexts {#consuming-multiple-contexts}](#Consuming-Multiple-Contexts-consuming-multiple-contexts)
+- [Caveats {#caveats}](#Caveats-caveats)
+- [Legacy API {#legacy-api}](#Legacy-API-legacy-api)
 
 ## When to Use Context {#when-to-use-context}
 
